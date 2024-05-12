@@ -1,7 +1,7 @@
 
 function abrirModal(pais){
     var modal = document.getElementById(pais);
-    modal.style.display = "grid";
+    modal.style.display = "block";
 
     var abrirModal = document.getElementById("abrirModal");
     abrirModal.style.display = "flex";
