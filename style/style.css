@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Kadwa:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --cor-fundo: #7F3854;
+    --cor-fonte: #FFFFFF;
+    --cor-fonteSTR: #FF95BF;
+}
+body{
+    background-color: var(--cor-fundo);
+    color: var(--cor-fonte);
+    font-family: "Kadwa", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+strong{
+    text-transform: uppercase;
+    color: var(--cor-fonteSTR);
+}
+h1{
+    font-size: 96px;
+    text-align: center;
+}
+p{
+    font-size: 64px;
+}
+#home{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#home img{
+    height: 100%;
+}
+#aventura{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+#modal{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    gap: 2em;
+}
+#modal a{
+    font-size: 48px;
+    text-align: center;
+    background-color: var(--cor-fonteSTR);
+    padding: 45px 120px;
+    border-radius: 24px;
+    transition: 1s ease;
+}
+#modal a:hover{
+    transform: scale(1.05);
+    transition: 1s ease;
+}
+#abrirModal{
+    height: 100vh;
+    width: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+#japao, #orlando, #ny, #caribe, #brasil, #cruzeiro{
+    display: none;
+}
+
+#comeco{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+#comeco img{
+    height: 579px;
+    width: 893px;
+}
+#te_amo{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.modais{
+    padding: 40px;
+    height: 90vh;
+    width: 80%;
+    background-color: var(--cor-fonteSTR);
+    border-radius: 24px;
+    animation: modalOpen 0.5s ease-in-out forwards;
+}
+.imagens{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    align-items: center;
+}
+.imagens img {
+    width: 100%;
+    height: auto;
+    transition: 1s ease;
+}
+.imagens img:hover {
+    transform: scale(1.05);
+    transition: 1s ease;
+}
+.titulo{
+    height: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+img{
+    cursor: pointer;
+}
+#coracao{
+    animation: heartbeat 1s infinite;
+}
+@keyframes modalOpen {
+    from {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes heartbeat {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+@media screen and (max-width: 430px) {
+    h1 {
+        font-size: 48px;
+    }
+    p {
+        font-size: 32px;
+    }
+    img{
+        width: 100%;
+    }
+    #home{
+        display: flex;
+        flex-direction: column;
+    }
+    #home{
+        height: 50%;
+    }
+    #aventura{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    #modal{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    #modal a{
+        font-size: 24px;
+        text-align: center;
+        background-color: var(--cor-fonteSTR);
+        padding: 22.5px 60px;
+        border-radius: 24px;
+        transition: 1s ease;
+    }
+    #comeco img{
+        width: 100%;
+        height: 50%;
+    }
+    #te_amo{
+        display: flex;
+        flex-direction: column;
+    }
+    #abrirModal{
+        width: 100%;
+    }
+    .modais{
+        padding: 40px;
+        height: 90vh;
+        width: 80%;
+    }
+    .titulo img{
+        width: 20%;
+        height: 100%;
+    }
+    .imagens{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
+    .imagens img{
+        width: 82%;
+        height: 30%;
+    }
+}

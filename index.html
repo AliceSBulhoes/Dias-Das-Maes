@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Dias das Mães!</title>
+    <!--CSS EXTERNO-->
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="shortcut icon" href="./img/coracao/coracao.png">
+</head>
+<body>
+    <section id="home">
+        <h1>Para a melhor <br> mãe do <strong>mundo</strong>!</h1>
+        <img src="./img/emoji/emoji_coracao.png">
+    </section>
+    <section id="aventura">
+        <h1>Nós vivemos muitas <br> <strong>aventuras</strong> juntas!</h1>
+        <div id="modal">
+            <a class="btnModal" onclick="abrirModal('japao')">Japão</a>
+            <a class="btnModal" onclick="abrirModal('orlando')">Orlando</a>
+            <a class="btnModal" onclick="abrirModal('ny')">N.Y.</a>
+            <a class="btnModal" onclick="abrirModal('caribe')">Caribe</a>
+            <a class="btnModal" onclick="abrirModal('brasil')">Brasil</a>
+            <a class="btnModal" onclick="abrirModal('cruzeiro')">Cruzeiro</a>
+        </div>
+    </section>
+    <section id="abrirModal">
+        <div id="japao" class="modais">
+            <div class="titulo">
+                <h1>Japão</h1>
+                <img src="./img/cards/fechar_modal.png" onclick="fecharModal('japao')" alt="fechar">
+            </div>
+            <div class="imagens">
+                <img src="./img/cards/japao1.png" alt="foto">
+                <img src="./img/cards/japao2.png" alt="foto">
+                <img src="./img/cards/japao3.png" alt="foto">
+            </div>
+        </div>
+        <div id="orlando" class="modais">
+            <div class="titulo">
+                <h1>Orlando</h1>
+                <img src="./img/cards/fechar_modal.png" onclick="fecharModal('orlando')" alt="fechar">
+            </div>
+            <div class="imagens">
+                <img src="./img/cards/orlando1.png" alt="foto">
+                <img src="./img/cards/orlando2.png" alt="foto">
+                <img src="./img/cards/orlando3.png" alt="foto">
+            </div>
+        </div>
+        <div id="ny" class="modais">
+            <div class="titulo">
+                <h1>N.Y.</h1>
+                <img src="./img/cards/fechar_modal.png" onclick="fecharModal('ny')" alt="fechar">
+            </div>
+            <div class="imagens">
+                <img src="./img/cards/ny1.png" alt="foto">
+                <img src="./img/cards/ny2.png" alt="foto">
+                <img src="./img/cards/ny3.png" alt="foto">
+            </div>
+        </div>
+        <div id="caribe" class="modais">
+            <div class="titulo">
+                <h1>Caribe</h1>
+                <img src="./img/cards/fechar_modal.png" onclick="fecharModal('caribe')" alt="fechar">
+            </div>
+            <div class="imagens">
+                <img src="./img/cards/caribe1.png" alt="foto">
+                <img src="./img/cards/caribe2.png" alt="foto">
+                <img src="./img/cards/caribe3.png" alt="foto">
+            </div>
+        </div>
+        <div id="brasil" class="modais">
+            <div class="titulo">
+                <h1>Brasil</h1>
+                <img src="./img/cards/fechar_modal.png" onclick="fecharModal('brasil')" alt="fechar">
+            </div>
+            <div class="imagens">
+                <img src="./img/cards/brasil1.png" alt="foto">
+                <img src="./img/cards/brasil2.png" alt="foto">
+                <img src="./img/cards/brasil3.png" alt="foto">
+            </div>
+        </div>
+        <div id="cruzeiro" class="modais">
+            <div class="titulo">
+                <h1>Cruzeiro</h1>
+                <img src="./img/cards/fechar_modal.png" onclick="fecharModal('cruzeiro')" alt="fechar">
+            </div>
+            <div class="imagens">
+                <img src="./img/cards/cruzeiro1.png" alt="foto">
+                <img src="./img/cards/cruzeiro2.png" alt="foto">
+                <img src="./img/cards/cruzeiro3.png" alt="foto">
+            </div>
+        </div>
+    </section>
+    <section id="comeco">
+        <h1>Minha Parceira para <strong>tudo</strong>!</h1>
+        <p>Desde o <strong>começo</strong>, até <strong>agora</strong> e no <strong>futuro</strong> <br> <strong>sempre juntas</strong>!</p>
+        <img src="./img/emoji/parceiras.png">
+    </section>
+    <section id="te_amo">
+        <h1>Eu te amo, <br> <strong>Mamãe</strong></h1>
+        <img src="./img/coracao/coracao.png" id="coracao">
+    </section>
+    <script src="./js/script.js"></script>
+</body>
+</html>
